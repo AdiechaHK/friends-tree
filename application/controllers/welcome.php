@@ -4,15 +4,21 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		// $this->load->view('welcome_message');
+		$this->load->view('friendstree_home');
 	}
 	public function home()
 	{
 		$this->load->view('friendstree_home');
 	}
-	public function signup()
+	public function sign_up()
 	{
-		$this->load->view('signup');
+		$this->load->view('sign_up');
+	}
+
+	public function sign_in() 
+	{
+		$this->load->view('sign_in');
 	}
 
 }
